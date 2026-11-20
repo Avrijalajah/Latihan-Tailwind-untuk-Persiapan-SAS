@@ -8,7 +8,33 @@ Buat seperti yang ada di ./layout-1.png -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body class="flex justify-center items-center p-10">
+
+    <section class="flex flex-col border w-200 h-100 p-4 gap-5">
+
+      <div class="w-190 h-70 flex justify-center items-center rounded-2xl bg-indigo-600">
+        <h2 class="text-white font-bold">Banner Utama</h2>
+      </div>
+
+      <div class=" w-150 h-40 flex items-center rounded-2xl bg-blue-400">
+        <p class="text-white font-bold ml-5">Kotak 75%</p>
+      </div>
+
+      <div class=" w-100 h-40 flex items-center rounded-2xl bg-green-400">
+        <p class="text-white font-bold ml-5">Kotak 50%</p>
+      </div>
+
+      <div class="border w-190"></div>
+
+      <div class="flex gap-5">
+        <div class="h-30 w-30 rounded-full bg-orange-400"></div>
+        
+        <div class="h-30 w-50 rounded-2xl bg-red-400"></div>
+      </div>
+      </section>
+
+  </body>
 </html>

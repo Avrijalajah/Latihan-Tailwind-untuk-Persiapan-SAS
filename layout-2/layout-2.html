@@ -1,5 +1,7 @@
+
 <!-- TODO:
-Buat seperti yang ada di ./layout-2.png -->
+Buat seperti yang ada di ./layout-2.png
+-->
 
 <!doctype html>
 <html lang="en">
@@ -8,7 +10,52 @@ Buat seperti yang ada di ./layout-2.png -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <body></body>
+
+  <body class="flex justify-center items-center min-h-screen bg-slate-100 p-10">
+
+    <section class="relative w-120 bg-white rounded-3xl shadow-xl p-9 flex flex-col gap-6">
+
+      <!-- Diskon -->
+      <div class="absolute -top-5 right-[-18px] bg-pink-500 text-white font-bold px-5 py-2 rounded-full shadow-md">
+        DISKON 50%
+      </div>
+
+      <!-- Area Gambar Produk -->
+      <div class="relative w-full h-66 flex justify-center items-center rounded-2xl bg-indigo-100">
+
+        <h2 class="text-indigo-400 font-bold text-2xl">
+          Area Gambar Produk
+        </h2>
+
+        <!-- Tombol Favorit -->
+        <div class="absolute top-5 right-5 w-12 h-12 rounded-full bg-white flex justify-center items-center shadow-md">
+          <span class="text-pink-500 text-2xl">♥</span>
+        </div>
+
+        <!-- Stok -->
+        <div class="absolute bottom-4 left-4 bg-slate-700 text-white font-bold px-4 py-2 rounded-lg">
+          Stok Terbatas
+        </div>
+
+      </div>
+
+      <!-- Informasi Produk -->
+      <div class="flex flex-col gap-3">
+
+        <h2 class="text-2xl font-bold text-slate-800">
+          Keyboard Mechanical
+        </h2>
+
+        <p class="text-xl text-slate-500">
+          Switch tactile dengan lampu RGB.
+        </p>
+
+      </div>
+
+    </section>
+
+  </body>
 </html>
